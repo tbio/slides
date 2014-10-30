@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>T-Bio Heartcare</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -42,25 +42,57 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+				<section data-background="/img/cover.jpg">
+					<h1>T-Bio Heartcare</h1>
+					<h3>Watching your heart, so you don't have to</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small><a href="http://t-bio.co">t-bio.co</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
+				<section data-background="/img/second.jpg">
+					<h2>A human problem</h2>
+					<p class="fragment" data-fragment-index="1">
+						Cardiovascular disease (CVD)—including heart disease, stroke, and high blood pressure—is the number 1 killer of women and men in the United States. 
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						It is a leading cause of disability, preventing Americans from working and enjoying family activities.
 					</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						notes
 					</aside>
 				</section>
+				<section data-background="/img/third.jpg">
+					<h2>Our solution</h2>
+					<p>
+						A friendly interface to really understand your heart health
+					</p>
+					<p>
+						Real time monitoring of your heart, so you can focus on doing what you love.
+					</p>
+					<p>
+						Connection with doctors and research centers that know exactly how to help you
+					</p>
+
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+				<section data-background="/img/third.jpg">
+					<h2>Technology</h2>
+					<ul>
+						<li>A wearable device designed as a low cost ECG for people with heart disease.</li>
+						<li>Mobile App</li>
+						<li>Dashboard</li>
+						<li>Data Analysis</li>
+					</ul>
+
+					<aside class="notes">
+						notes
+					</aside>
+				</section>
+
 
 				<!-- Example of nested vertical slides -->
 				<section>
@@ -371,10 +403,10 @@ function linkify( selector ) {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundImage: '/img/cover.jpg',
 				// parallaxBackgroundSize: '2100px 900px',
 
 				// Optional libraries used to extend on reveal.js
